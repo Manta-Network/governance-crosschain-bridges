@@ -10,7 +10,6 @@ export type eNetwork =
   | eOptimismNetwork;
 
 export enum eEthereumNetwork {
-  kovan = 'kovan',
   ropsten = 'ropsten',
   rinkeby = 'rinkeby',
   goerli = 'goerli',
@@ -18,6 +17,7 @@ export enum eEthereumNetwork {
   coverage = 'coverage',
   hardhat = 'hardhat',
   tenderlyMain = 'tenderlyMain',
+  sepolia = 'sepolia',
 }
 
 export enum ePolygonNetwork {
@@ -40,7 +40,6 @@ export enum eOptimismNetwork {
 }
 
 export enum EthereumNetworkNames {
-  kovan = 'kovan',
   ropsten = 'ropsten',
   rinkeby = 'rinkeby',
   goerli = 'goerli',
@@ -48,6 +47,7 @@ export enum EthereumNetworkNames {
   matic = 'matic',
   mumbai = 'mumbai',
   xdai = 'xdai',
+  sepolia = 'sepolia',
 }
 
 export type tEthereumAddress = string;
@@ -66,7 +66,7 @@ export interface iParamsPerNetworkAll<T>
 
 export interface iEthereumParamsPerNetwork<eNetwork> {
   [eEthereumNetwork.coverage]: eNetwork;
-  [eEthereumNetwork.kovan]: eNetwork;
+  [eEthereumNetwork.sepolia]: eNetwork;
   [eEthereumNetwork.ropsten]: eNetwork;
   [eEthereumNetwork.rinkeby]: eNetwork;
   [eEthereumNetwork.goerli]: eNetwork;

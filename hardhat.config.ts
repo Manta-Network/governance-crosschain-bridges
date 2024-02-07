@@ -122,8 +122,8 @@ const hardhatConfig: HardhatUserConfig = {
     timeout: 100000,
   },
   networks: {
-    kovan: {
-      ...getCommonNetworkConfig(eEthereumNetwork.kovan, 42),
+    sepolia: {
+      ...getCommonNetworkConfig(eEthereumNetwork.sepolia, 11155111),
       companionNetworks: {
         optimism: eOptimismNetwork.testnet,
       },
@@ -158,7 +158,7 @@ const hardhatConfig: HardhatUserConfig = {
     [eOptimismNetwork.testnet]: {
       ...getCommonNetworkConfig(eOptimismNetwork.testnet, 69),
       companionNetworks: {
-        l1: 'kovan',
+        l1: 'sepolia',
       },
     },
     hardhat: {

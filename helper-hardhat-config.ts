@@ -12,9 +12,9 @@ const ALCHEMY_KEY = process.env.ALCHEMY_KEY || '';
 const TENDERLY_FORK = process.env.TENDERLY_FORK || '';
 
 export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
-  [eEthereumNetwork.kovan]: ALCHEMY_KEY
-    ? `https://eth-kovan.alchemyapi.io/v2/${ALCHEMY_KEY}`
-    : `https://kovan.infura.io/v3/${INFURA_KEY}`,
+    [eEthereumNetwork.sepolia]: ALCHEMY_KEY
+    ? `https://eth-sepolia.alchemyapi.io/v2/${ALCHEMY_KEY}`
+    : `https://sepolia.infura.io/v3/${INFURA_KEY}`,
   [eEthereumNetwork.ropsten]: ALCHEMY_KEY
     ? `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_KEY}`
     : `https://ropsten.infura.io/v3/${INFURA_KEY}`,
@@ -36,5 +36,5 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eArbitrumNetwork.arbitrum]: `https://arb1.arbitrum.io/rpc`,
   [eArbitrumNetwork.arbitrumTestnet]: `https://rinkeby.arbitrum.io/rpc`,
   [eOptimismNetwork.main]: `https://opt-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`,
-  [eOptimismNetwork.testnet]: `https://opt-kovan.g.alchemy.com/v2/${ALCHEMY_KEY}`,
+  [eOptimismNetwork.testnet]: `https://opt-sepolia.g.alchemy.com/v2/${ALCHEMY_KEY}`,
 };
