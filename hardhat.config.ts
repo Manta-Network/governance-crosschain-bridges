@@ -156,7 +156,7 @@ const hardhatConfig: HardhatUserConfig = {
     },
     [eOptimismNetwork.main]: getCommonNetworkConfig(eOptimismNetwork.main, 10),
     [eOptimismNetwork.testnet]: {
-      ...getCommonNetworkConfig(eOptimismNetwork.testnet, 69),
+      ...getCommonNetworkConfig(eOptimismNetwork.testnet, 11155420),
       companionNetworks: {
         l1: 'sepolia',
       },

@@ -36,5 +36,5 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eArbitrumNetwork.arbitrum]: `https://arb1.arbitrum.io/rpc`,
   [eArbitrumNetwork.arbitrumTestnet]: `https://rinkeby.arbitrum.io/rpc`,
   [eOptimismNetwork.main]: `https://opt-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`,
-  [eOptimismNetwork.testnet]: `https://opt-sepolia.g.alchemy.com/v2/${ALCHEMY_KEY}`,
+  [eOptimismNetwork.testnet]: "https://sepolia.optimism.io",
 };
