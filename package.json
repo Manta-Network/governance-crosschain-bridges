@@ -21,7 +21,6 @@
     "hardhat:sepolia": "hardhat --network sepolia",
     "hardhat:tenderlyMain": "hardhat --network tenderlyMain",
     "hardhat:ropsten": "hardhat --network ropsten",
-    "hardhat:rinkeby": "hardhat --network rinkeby",
     "hardhat:goerli": "hardhat --network goerli",
     "hardhat:main": "hardhat --network main",
     "hardhat:docker": "hardhat --network hardhatevm_docker",
