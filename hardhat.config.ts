@@ -148,7 +148,6 @@ const hardhatConfig: HardhatUserConfig = {
         arbitrum: eArbitrumNetwork.arbitrumTestnet,
       },
     },
-    ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     goerli: getCommonNetworkConfig(eEthereumNetwork.goerli, 5),
     main: {
       ...getCommonNetworkConfig(eEthereumNetwork.main, 1),

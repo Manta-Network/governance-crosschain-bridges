@@ -20,7 +20,6 @@
     "test-fork": "npm run compile && MAINNET_FORK=true FORKING_BLOCK_NUMBER=14340480 hardhat test test/fork/crosschain-bridges.spec.ts",
     "hardhat:sepolia": "hardhat --network sepolia",
     "hardhat:tenderlyMain": "hardhat --network tenderlyMain",
-    "hardhat:ropsten": "hardhat --network ropsten",
     "hardhat:goerli": "hardhat --network goerli",
     "hardhat:main": "hardhat --network main",
     "hardhat:docker": "hardhat --network hardhatevm_docker",
