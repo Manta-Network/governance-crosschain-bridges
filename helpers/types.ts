@@ -10,7 +10,6 @@ export type eNetwork =
   | eOptimismNetwork;
 
 export enum eEthereumNetwork {
-  ropsten = 'ropsten',
   goerli = 'goerli',
   main = 'main',
   coverage = 'coverage',
@@ -39,7 +38,6 @@ export enum eOptimismNetwork {
 }
 
 export enum EthereumNetworkNames {
-  ropsten = 'ropsten',
   goerli = 'goerli',
   main = 'main',
   matic = 'matic',
@@ -65,7 +63,6 @@ export interface iParamsPerNetworkAll<T>
 export interface iEthereumParamsPerNetwork<eNetwork> {
   [eEthereumNetwork.coverage]: eNetwork;
   [eEthereumNetwork.sepolia]: eNetwork;
-  [eEthereumNetwork.ropsten]: eNetwork;
   [eEthereumNetwork.goerli]: eNetwork;
   [eEthereumNetwork.main]: eNetwork;
   [eEthereumNetwork.hardhat]: eNetwork;

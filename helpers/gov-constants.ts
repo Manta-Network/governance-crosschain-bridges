@@ -5,7 +5,7 @@ export const ADDRESSES = {
   // Lido Aragon Agent before usage.
 
   // Common
-  ETHEREUM_GOV_EXECUTOR: '0x32A0E5828B62AAb932362a4816ae03b860b65e83',
+  ETHEREUM_GOV_EXECUTOR: '0x184d39300f2fa4419d04998e9c58cb5de586d879',
 
   // Optimism
   // https://docs.optimism.io/chain/addresses

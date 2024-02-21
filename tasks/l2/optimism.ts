@@ -24,7 +24,7 @@ task(
   const GAS_LIMIT = 1500000;
   const MESSAGE = 'Miguel was also here';
 
-  let OVM_L1_MESSENGER = ADDRESSES['OVM_L1_MESSENGER_MAIN'];
+  let OVM_L1_MESSENGER = ADDRESSES['OVM_L1_MESSENGER_MAINNET'];
   if (DRE.network.name == eEthereumNetwork.sepolia) {
     OVM_L1_MESSENGER = ADDRESSES['OVM_L1_MESSENGER_SEPOLIA'];
   }
