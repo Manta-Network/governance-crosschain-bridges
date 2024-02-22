@@ -111,26 +111,26 @@ const hardhatConfig: HardhatUserConfig = {
     apiKey: {
       optimisticEthereum: OPTIMISTIC_ETHERSCAN_KEY,
       arbitrumOne: ARBISCAN_KEY,
-      "optimism-testnet": OPTIMISTIC_ETHERSCAN_KEY,
+      optimisticSepolia: OPTIMISTIC_ETHERSCAN_KEY,
     },
     customChains: [
-        {
-          network: 'sepolia',
-          chainId: 11155111,
-          urls: {
-            apiURL: 'https://api-sepolia.etherscan.io/api',
-            browserURL: 'https://sepolia.etherscan.io',
-          },
+      {
+        network: 'sepolia',
+        chainId: 11155111,
+        urls: {
+          apiURL: 'https://api-sepolia.etherscan.io/api',
+          browserURL: 'https://sepolia.etherscan.io',
         },
-        {
-            network: 'optimism-testnet',
-            chainId: 11155420,
-            urls: {
-              apiURL: 'https://api-sepolia-optimism.etherscan.io/api',
-              browserURL: 'https://sepolia-optimism.etherscan.io',
-            },
-          },
-      ],
+      },
+      {
+        network: 'optimisticSepolia',
+        chainId: 11155420,
+        urls: {
+          apiURL: 'https://api-sepolia-optimism.etherscan.io/api',
+          browserURL: 'https://sepolia-optimism.etherscan.io',
+        },
+      },
+    ],
   },
   tenderly: {
     project: TENDERLY_PROJECT,

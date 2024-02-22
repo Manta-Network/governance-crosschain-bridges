@@ -34,7 +34,7 @@ export enum eArbitrumNetwork {
 
 export enum eOptimismNetwork {
   main = 'optimism',
-  testnet = 'optimism-testnet',
+  testnet = 'optimisticSepolia',
 }
 
 export enum EthereumNetworkNames {
