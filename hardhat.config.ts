@@ -20,6 +20,7 @@ import { accounts } from './helpers/test-wallets';
 import {
   eArbitrumNetwork,
   eEthereumNetwork,
+  eMantaNetwork,
   eNetwork,
   eOptimismNetwork,
   ePolygonNetwork,
@@ -130,6 +131,14 @@ const hardhatConfig: HardhatUserConfig = {
           browserURL: 'https://sepolia-optimism.etherscan.io',
         },
       },
+      {
+        network: 'mantaSepolia',
+        chainId: 3441006,
+        urls: {
+          apiURL: 'https://manta-sepolia.rpc.caldera.xyz/http',
+          browserURL: 'https://manta-sepolia.explorer.caldera.xyz',
+        },
+      },
     ],
   },
   tenderly: {
@@ -174,6 +183,14 @@ const hardhatConfig: HardhatUserConfig = {
         l1: 'sepolia',
       },
     },
+    [eMantaNetwork.main]: getCommonNetworkConfig(eMantaNetwork.main, 169),
+    [eMantaNetwork.testnet]: {
+      ...getCommonNetworkConfig(eMantaNetwork.testnet, 3441006),
+      companionNetworks: {
+        l1: 'sepolia',
+      },
+    },
+    
     hardhat: {
       accounts: accounts.map(({ secretKey, balance }: { secretKey: string; balance: string }) => ({
         privateKey: secretKey,

@@ -1,6 +1,7 @@
 import {
   eArbitrumNetwork,
   eEthereumNetwork,
+  eMantaNetwork,
   eOptimismNetwork,
   ePolygonNetwork,
   eXDaiNetwork,
@@ -31,4 +32,6 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eArbitrumNetwork.arbitrumTestnet]: `https://sepolia-rollup.arbitrum.io/rpc`,
   [eOptimismNetwork.main]: `https://opt-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`,
   [eOptimismNetwork.testnet]: "https://sepolia.optimism.io",
+  [eMantaNetwork.main]: `https://pacific-rpc.manta.network/http`,
+  [eMantaNetwork.testnet]: "https://manta-sepolia.rpc.caldera.xyz/http",
 };
